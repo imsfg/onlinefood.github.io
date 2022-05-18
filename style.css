@@ -1,0 +1,212 @@
+* {
+margin: auto;
+    top: 0;
+    left: 0;
+    font-family: 'Chela One', cursive;
+    
+}
+
+
+#ims {
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    position: relative;
+    /* left: -90px; */
+    
+}
+
+.logo {
+    display: flex;
+  z-index: 2;
+    position: absolute;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    
+    /* margin: 0px 0px;
+    padding: 0px 0px; */
+    position: absolute;
+    height: 60px;
+    left: 450px;
+
+}
+
+ul::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(39, 36, 36);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+.logo li {
+    margin: 20px 40px;
+   
+
+}
+li a{
+    color: aqua;
+    text-decoration: none;
+}
+
+/* .content::before {
+    content: "";
+    background-color: blueviolet;
+    position: static;
+} */
+
+.content {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-content: center;
+   
+    margin: 00px 450px;
+    padding: 100px 10px;
+    width: 40%;
+ 
+}
+
+.main {
+    position: relative;
+
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    background: url('food1.jpg') no-repeat center bottom/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#text {
+    font-size: 3rem;
+    position: relative;
+    top: 80px;
+    margin: 30px 0px;
+    color: black;
+    line-height: 70px;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+.parts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: 40px;
+  
+
+}
+#we{
+    display: block;
+    margin: auto;
+    border-radius: 100px; 
+    border: 3px solid black; 
+    cursor: pointer; 
+    transition: all 0.5s ease-in-out;
+    
+}
+#we:hover{
+    transform: scale(1.1);
+    
+}
+#s2{
+    display: block;
+    text-align: center;
+   
+}
+.p1 {
+    border: 2px solid black;
+    margin: 10px 80px;
+    border-radius: 40px;
+    background-color: rgb(220, 207, 207);
+    
+}
+#hi{
+    position: relative;
+    top: 60px;
+}
+
+#button{
+     border-radius:10px ;
+     color: white;
+     border: 2px solid white;
+     background-color: black;
+     padding: 10px 30px; 
+     margin: 20px 0px;
+     position: relative; top: 40px;
+     transition: all 1sec ease-in-out;
+     cursor: pointer;
+}
+#button:hover{
+    transform: scale(1.2);
+}
+#write{
+   display:inline-block;
+position: relative;
+top: 20px;
+  left: 550px;
+   background-color: lightgrey;
+   border: 2px solid black;
+   animation: safal 1s ease-in-out forwards;
+   animation-iteration-count: 2;
+   
+}
+@keyframes safal{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(130px);
+    }
+
+}
+
+#food{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    position: relative;
+    top: 40px;
+}
+.form::before{ 
+    content: "";
+    position: absolute;
+    background: url('contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+.formgrp{
+  /* padding: 10px 100px; */
+  border: 2px solid red;
+}
+.formgrp > input{
+    padding: 10px 100px;
+    /* width: 100%; */
+    height: 100%;
+  }
+/* .form1{
+    padding: 100px;
+} */
+.as{
+    display: block;
+    margin: auto;
+}
